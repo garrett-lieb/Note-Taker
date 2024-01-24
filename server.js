@@ -6,6 +6,7 @@ const port = 3000;
 const apiRoutes = require('./routes');
 
 app.use(express.static('public'));
+app.use(express.json());
 
 app.use(express.urlencoded({ extended: true }));
 app.use('/api', apiRoutes);
