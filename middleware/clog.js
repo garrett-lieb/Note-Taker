@@ -3,4 +3,4 @@ function clog(req, res, next) {
     next();
 }
 
-module.exports = clog;
+exports.clog = clog;

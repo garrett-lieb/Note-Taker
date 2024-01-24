@@ -1,9 +1,6 @@
 const fs = require("fs");
 const util = require("util");
 
-const fs = require("fs");
-const util = require("util");
-
 // Promisify fs methods
 const readFile = util.promisify(fs.readFile);
 const writeFile = util.promisify(fs.writeFile);

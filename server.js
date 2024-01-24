@@ -1,9 +1,14 @@
 const express = require('express');
 const path = require('path');
-const app = express();
+const { clog } = require('./middleware/clog.js');
+const apiRoutes = require('./routes');
+
 const port = 3000;
 
-const apiRoutes = require('./routes');
+const app = express();
+
+app.use(clog);
+
 
 app.use(express.static('public'));
 app.use(express.json());
