@@ -16,7 +16,20 @@ const writeNotes = async (filePath, data) => {
     await writeFile(filePath, JSON.stringify(data, null, 2));
 };
 
+const readAndAppend = (content, file) => {
+fs.readFile(file, 'utf8', (err, data) => {
+    if (err) {
+        console.error(err);
+    } else {
+        const parsedData = JSON.parse(data);
+        parsedData.push(content);
+        writeToFile(file, parsedData);
+    }
+});
+};
+
 module.exports = {
     readNotes,
-    writeNotes
+    writeNotes,
+    readAndAppend
 };
