@@ -60,7 +60,8 @@ app.post('/api/notes', (req, res) => {
     }
 });
 
-// add note to db.json file
+// read and append to db.json file
+
 
 
 
