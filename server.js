@@ -35,26 +35,6 @@ app.get('*', (req, res) => {
     res.sendFile(path.join(__dirname, 'public', 'index.html'));
 })
 
-// POST route for notes api 
-app.post('/api/notes', (req, res) => {
-    console.info(`${req.method} request received to add a note`);
-
-    const { title, text } = req.body;
-
-    if (title && text) {
-        const newNote = {
-            title,
-            text,
-        };
-
-        readAndAppend(newNote, './db/db.json');
-        res.json(`Note added successfully`);
-
-    } else {
-        res.json('Error in posting note');
-    }
-});
-
 app.listen(port, () => console.log(`Example app listening on port ${port}!`));
 
 
