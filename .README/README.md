@@ -8,7 +8,13 @@ This is a Note Taker App that runs using Express, deployed with Heroku, that was
 <img src="/.README/images/2.png" width="100%" height="100%">
 <img src="/.README/images/3.png" width="100%" height="100%">
 
-/Users/garrett_lieb/Note-Taker/.README/images/1.png
+
+Deployed Page via Heroku:
+https://glacial-meadow-00191-6fc74f7e753e.herokuapp.com/
+
+Student Github Profile:
+https://github.com/garrett-lieb
+
 
 ## Installation
 
@@ -16,7 +22,7 @@ N/A
 
 ## Usage
 
-
+Notes entered into the fields on the right will appear on the left hand side of the page.
 
 ## Credits
 

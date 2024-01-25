@@ -9,7 +9,6 @@ const app = express();
 
 app.use(clog);
 
-
 app.use(express.static('public'));
 app.use(express.json());
 
@@ -36,7 +35,7 @@ app.get('*', (req, res) => {
     res.sendFile(path.join(__dirname, 'public', 'index.html'));
 })
 
-// POST route for notes api
+// POST route for notes api 
 app.post('/api/notes', (req, res) => {
     console.info(`${req.method} request received to add a note`);
 
@@ -48,13 +47,9 @@ app.post('/api/notes', (req, res) => {
             text,
         };
 
-        const response = {
-            status: 'success',
-            body: newNote,
-        };
+        readAndAppend(newNote, './db/db.json');
+        res.json(`Note added successfully`);
 
-        console.log(response);
-        res.json(response);
     } else {
         res.json('Error in posting note');
     }

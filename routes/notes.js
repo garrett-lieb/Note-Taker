@@ -1,11 +1,11 @@
 const noteRouter = require("express").Router();
 const path = require("path");
 const fs = require("fs");
-const {
-    writeNotes,
-    readAndAppend,
-    readNotes,
-} = require("../helpers/fsUtils");
+// const {
+//     writeNotes,
+//     readAndAppend,
+//     readNotes,
+// } = require("../helpers/fsUtils");
 
 noteRouter.get("/", (req, res) => {
     try {
@@ -16,7 +16,6 @@ noteRouter.get("/", (req, res) => {
         res.status(500).send('Server Error');
     }
 });
-
 
 noteRouter.post("/", (req, res) => {
     console.log(req.body);
@@ -31,10 +30,5 @@ noteRouter.post("/", (req, res) => {
         res.status(500).send('Server Error');
     }
 });
-
-// when existing note is clicked, it should appear in the note input field
-
-// DELETE route for notes api
-
 
 module.exports = noteRouter;
