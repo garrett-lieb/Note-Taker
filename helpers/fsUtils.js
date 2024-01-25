@@ -23,7 +23,7 @@ fs.readFile(file, 'utf8', (err, data) => {
     } else {
         const parsedData = JSON.parse(data);
         parsedData.push(content);
-        writeToFile(file, parsedData);
+        writeFile(file, parsedData);
     }
 });
 };
