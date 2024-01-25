@@ -60,29 +60,9 @@ app.post('/api/notes', (req, res) => {
     }
 });
 
-// need to be able to save notes to db.json
-// need to be able to retrieve notes from db.json
+// add note to db.json file
 
 
-
-// DELETE route for notes api
-app.delete('/api/notes/:id', (req, res) => {
-    console.info(`${req.method} request received to delete a note`);
-
-    const { id } = req.params;
-
-    if (id) {
-        const response = {
-            status: 'success',
-            body: id,
-        };
-
-        console.log(response);
-        res.json(response);
-    } else {
-        res.json('Error in deleting note');
-    }
-});
 
 
 
