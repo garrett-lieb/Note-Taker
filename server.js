@@ -60,13 +60,6 @@ app.post('/api/notes', (req, res) => {
     }
 });
 
-// read and append to db.json file
-
-
-
-
-
-
 app.listen(port, () => console.log(`Example app listening on port ${port}!`));
 
 
