@@ -17,7 +17,7 @@ noteRouter.get("/", (req, res) => {
     }
 });
 
-//POST route for notes api
+
 noteRouter.post("/", (req, res) => {
     console.log(req.body);
     const { title, text } = req.body;
