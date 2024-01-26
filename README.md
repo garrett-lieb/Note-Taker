@@ -14,8 +14,6 @@ This is a Note Taker App that runs using Express, deployed with Heroku, that was
 Deployed Page via Heroku:
 https://glacial-meadow-00191-6fc74f7e753e.herokuapp.com/notes
 
-Student Github Profile:
-https://github.com/garrett-lieb
 
 
 ## Installation
