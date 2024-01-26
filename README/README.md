@@ -4,11 +4,11 @@
 
 This is a Note Taker App that runs using Express, deployed with Heroku, that was developed as a homewokr assignemnt for the edX coding bootcamp through the University of Oregon in January of 2024. 
 
-<img src="/.README/images/1.png" width="100%" height="100%">
-<img src="/.README/images/2.png" width="100%" height="100%">
-<img src="/.README/images/3.png" width="100%" height="100%">
-<img src="/.README/images/4.png" width="100%" height="100%">
-<img src="/.README/images/5.png" width="100%" height="100%">
+<img src="/README/images/1.png" width="100%" height="100%">
+<img src="/README/images/2.png" width="100%" height="100%">
+<img src="/README/images/3.png" width="100%" height="100%">
+<img src="/README/images/4.png" width="100%" height="100%">
+<img src="/README/images/5.png" width="100%" height="100%">
 
 
 Deployed Page via Heroku:
