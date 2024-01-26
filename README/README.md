@@ -7,10 +7,12 @@ This is a Note Taker App that runs using Express, deployed with Heroku, that was
 <img src="/.README/images/1.png" width="100%" height="100%">
 <img src="/.README/images/2.png" width="100%" height="100%">
 <img src="/.README/images/3.png" width="100%" height="100%">
+<img src="/.README/images/4.png" width="100%" height="100%">
+<img src="/.README/images/5.png" width="100%" height="100%">
 
 
 Deployed Page via Heroku:
-https://glacial-meadow-00191-6fc74f7e753e.herokuapp.com/
+https://glacial-meadow-00191-6fc74f7e753e.herokuapp.com/notes
 
 Student Github Profile:
 https://github.com/garrett-lieb
